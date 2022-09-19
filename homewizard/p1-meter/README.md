@@ -1,6 +1,6 @@
 # Display the current power usage from the data of the API of the HomeWizard Wi-Fi P1 Meter
 
-![Example output](p1-meter.png)
+![Example output](p1-meter-phase.png)
 
 
 
