@@ -1,8 +1,8 @@
 ﻿<#
     active_power_w    : The total active usage in Watts
-    active_power_l1_w : The active usage for fase 1 in Watts
-    active_power_l2_w : The active usage for fase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
-    active_power_l3_w : The active usage for fase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
+    active_power_l1_w : The active usage for phase 1 in Watts
+    active_power_l2_w : The active usage for phase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
+    active_power_l3_w : The active usage for phase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
 #>
 
 # Ensures that Invoke-WebRequest uses TLS 1.2
@@ -22,12 +22,12 @@ do {
         $ForegroundColor = "Green";
     }
 
-    Write-Host ("`nFase1 Fase2 Fase3 Total")
-    Write-Host ("----- ----- ----- -----")
+    Write-Host ("`nPhase1 Phase2 Phase3 Total")
+    Write-Host ("------ ------ ------ -----")
     Write-Host ("{0} {1} {2} {3}" -f `
-        $p1meterData.active_power_l1_w.ToString().PadLeft(5, " "), `
-        $p1meterData.active_power_l2_w.ToString().PadLeft(5, " "), `
-        $p1meterData.active_power_l3_w.ToString().PadLeft(5, " "), `
+        $p1meterData.active_power_l1_w.ToString().PadLeft(6, " "), `
+        $p1meterData.active_power_l2_w.ToString().PadLeft(6, " "), `
+        $p1meterData.active_power_l3_w.ToString().PadLeft(6, " "), `
         $p1meterData.active_power_w.ToString().PadLeft(5, " ")`
     ) -ForegroundColor $ForegroundColor
 

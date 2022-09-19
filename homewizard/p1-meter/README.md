@@ -29,9 +29,9 @@ When the Total column is a positive number you are drawing from the grid, when i
 
 | label | API property | Description |
 | --- | --- | --- |
-| Fase1 | active_power_l1_w | The active usage for fase 1 in Watts
-| Fase2 | active_power_l2_w | The active usage for fase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
-| Fase3 | active_power_l3_w | The active usage for fase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
+| Phase1 | active_power_l1_w | The active usage for phase 1 in Watts
+| Phase2 | active_power_l2_w | The active usage for phase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
+| Phase3 | active_power_l3_w | The active usage for phase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
 | Total | active_power_w    | The total active usage in Watts
 
 ## Links
