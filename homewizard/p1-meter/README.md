@@ -1,11 +1,9 @@
 # Display the current power usage from the data of the API of the HomeWizard Wi-Fi P1 Meter
 
-![Example output](p1-meter-phase.png)
-
-
 
 ## Usage
 
+<img src="docs/IMG20220919160839.jpg" width="200" alt="A photo of a HomeWizard Wi-Fi P1 Meter" align="right" />
 You can discover the hostname of your HomeWizard Wi-Fi P1 Meter by running the following commmand in a (PowerShell) terminal:
 
 ```cmd
@@ -20,6 +18,8 @@ Timestamp     A/R Flags if Domain                    Service Type              I
 14:46:11.368  Add     2 29 local.                    _hwenergy._tcp.           p1meter-DDEEFF
 ```
 When you run the `Read-P1-meter.ps1` script you will be asked to input the hostname.
+
+![Example output](p1-meter-phase.png)
 
 The script will run until you exit it by **CTRL + C**.
 
