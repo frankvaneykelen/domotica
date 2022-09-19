@@ -17,11 +17,18 @@ Browsing for _hwenergy._tcp
 Timestamp     A/R Flags if Domain                    Service Type              Instance Name
 14:46:11.368  Add     2 29 local.                    _hwenergy._tcp.           p1meter-DDEEFF
 ```
-When you run the `Read-P1-meter.ps1` script you will be asked to input the hostname.
+When you run the `Read-P1-meter.ps1` script you will be asked to input the hostname. This value is saved to an environment variable so you will need to enter it only once.
 
 ![Example output](p1-meter-phase.png)
 
 The script will run until you exit it by **CTRL + C**.
+
+To reset the `p1meterHostname` environment variable run the following command:
+
+```cmd
+[System.Environment]::SetEnvironmentVariable('p1meterHostname', '')
+```
+
 
 ## Legend
 
