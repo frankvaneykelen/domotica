@@ -25,7 +25,7 @@ The script will run until you exit it by **CTRL + C**.
 
 ## Legend
 
-When the Total column is a positive number you are drawing from the grid, when it is a negative number you are feeding back into the grid (a.k.a "the meter spins backwards"). When the total is positive the text is red, when the total is negative (the desired situation: you are generating more power than you are using) the text is green.
+When the Total column is a positive number you are drawing from the grid, when it is a negative number you are feeding back into the grid (a.k.a "the meter spins backwards"). When the total is positive the text is red, when the total is negative - the desired situation: you are generating more power than you are using - the text is green.
 
 | label | API property | Description |
 | --- | --- | --- |
