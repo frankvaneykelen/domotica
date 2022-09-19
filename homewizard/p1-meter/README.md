@@ -1,5 +1,9 @@
 # Display the current power usage from the data of the API of the HomeWizard Wi-Fi P1 Meter
 
+![Example output](p1-meter.png)
+
+
+
 ## Usage
 
 You can discover the hostname of your HomeWizard Wi-Fi P1 Meter by running the following commmand in a (PowerShell) terminal:
