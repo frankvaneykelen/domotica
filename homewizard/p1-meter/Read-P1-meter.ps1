@@ -3,12 +3,22 @@
     active_power_l1_w : The active usage for phase 1 in Watts
     active_power_l2_w : The active usage for phase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
     active_power_l3_w : The active usage for phase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
-#>
+
+    To reset the environment variables where your API hostname is saved run the following command:
+
+    [System.Environment]::SetEnvironmentVariable('p1meterHostname', '')
+
+    #>
 
 # Ensures that Invoke-WebRequest uses TLS 1.2
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$hostname = Read-Host "Please enter the hostname of your Wi-Fi P1 meter ('p1meter-DDEEFF' for example)"
+$hostname =  [System.Environment]::GetEnvironmentVariable('p1meterHostname')
+
+if ($null -eq $hostname) {
+    $hostname = Read-Host "Please enter the hostname of your Wi-Fi P1 meter ('p1meter-DDEEFF' for example)"
+    [System.Environment]::SetEnvironmentVariable('p1meterHostname', $hostname)
+}
 
 $endpoint = ("http://{0}/api/v1/data" -f $hostname)
 
