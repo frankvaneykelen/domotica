@@ -29,3 +29,8 @@ When the Total column is a positive number you are drawing from the grid, when i
 | Fase2 | active_power_l2_w | The active usage for fase 2 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
 | Fase3 | active_power_l3_w | The active usage for fase 3 in Watts (HWE-P1 returns ‘null’ when connection is single-phase)
 | Total | active_power_w    | The total active usage in Watts
+
+## Links
+
+- Device: https://www.homewizard.com/p1-meter/
+- API Docs: https://homewizard-energy-api.readthedocs.io/index.html
